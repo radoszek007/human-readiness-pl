@@ -7,12 +7,16 @@ type ButtonLinkProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "light";
   className?: string;
+  target?: string;
+  rel?: string;
 };
 
-export function ButtonLink({ href, children, variant = "primary", className }: ButtonLinkProps) {
+export function ButtonLink({ href, children, variant = "primary", className, target, rel }: ButtonLinkProps) {
   return (
     <Link
       href={href}
+      target={target}
+      rel={rel}
       className={clsx(
         "focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition",
         variant === "primary" &&
