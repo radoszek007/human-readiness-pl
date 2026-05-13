@@ -21,10 +21,10 @@ export default function HomePage() {
             <p className="mt-7 max-w-2xl text-lg leading-8 text-resilium-white/76 md:text-xl">
               Pomagamy ludziom, liderom i organizacjom zachować orientację, komunikować się jasno i działać profesjonalnie wtedy, gdy rośnie presja.
             </p>
-            <div className="mt-8 flex flex-col flex-wrap gap-3 sm:flex-row">
-              <ButtonLink href="#sciezki">Wybierz właściwą ścieżkę</ButtonLink>
-              <ButtonLink href="#jak-dziala" variant="secondary">Jak działa Resilium</ButtonLink>
-              <ButtonLink href="https://check.resilium.cz" variant="secondary" target="_blank" rel="noreferrer">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row xl:flex-nowrap">
+              <ButtonLink href="#sciezki" className="xl:px-4">Wybierz właściwą ścieżkę</ButtonLink>
+              <ButtonLink href="#jak-dziala" variant="secondary" className="xl:px-4">Jak działa Resilium</ButtonLink>
+              <ButtonLink href="https://check.resilium.cz" variant="secondary" target="_blank" rel="noreferrer" className="xl:px-4">
                 Uruchom readiness check
               </ButtonLink>
             </div>
